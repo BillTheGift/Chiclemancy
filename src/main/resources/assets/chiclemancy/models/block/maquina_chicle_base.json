@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "chiclemancy:block/maquina_chicle_base_front",
+    "side": "chiclemancy:block/maquina_chicle_base_side",
+    "top": "chiclemancy:block/maquina_chicle_base_top",
+    "bottom": "chiclemancy:block/maquina_chicle_base_bottom"
+  }
+}

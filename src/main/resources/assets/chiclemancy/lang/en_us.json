@@ -1,4 +1,7 @@
 {
   "item.chiclemancy.chiclemasticado": "Chewed Gum",
-  "item.chiclemancy.chicle_rojo_neutro": "Balanced Red Gum"
+
+  "item.chiclemancy.chicle_rojo_neutro": "Balanced Red Gum",
+
+  "block.chiclemancy.maquina_chicle_base": "Dispenser Base"
 }

@@ -1,6 +1,7 @@
 package net.billthegift.chiclemancy;
 
 import com.mojang.logging.LogUtils;
+import net.billthegift.chiclemancy.block.ModBlocks;
 import net.billthegift.chiclemancy.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,6 +25,8 @@ public class Chiclemancy {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
