@@ -1,6 +1,9 @@
 package net.billthegift.chiclemancy.item;
 
 import net.billthegift.chiclemancy.Chiclemancy;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,7 +16,9 @@ public class ModItems {
            DeferredRegister.create(ForgeRegistries.ITEMS, Chiclemancy.MOD_ID);
 
 public static final RegistryObject<Item> CHICLEMASTICADO = ITEMS.register("chiclemasticado",
-        () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+        () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)
+                .food(new FoodProperties.Builder().nutrition(1).saturationMod(.5f).alwaysEat().effect(
+                        () -> new MobEffectInstance(MobEffects.CONFUSION,200,0),1.0f).build())));
 
     public static final RegistryObject<Item> CHICLE_ROJO_NEUTRO = ITEMS.register("chicle_rojo_neutro",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
