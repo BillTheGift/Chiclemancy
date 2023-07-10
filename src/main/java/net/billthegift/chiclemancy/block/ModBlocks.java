@@ -6,6 +6,7 @@ import net.billthegift.chiclemancy.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,7 +22,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MAQUINA_CHICLE_BASE = registerBlock( "maquina_chicle_base",
             () -> new maquina_chicle_base(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops()));
+                    .strength(1f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MAQUINA_CHICLE_DOMO = registerBlock( "maquina_chicle_domo",
+            () -> new GlassBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(1f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> FISURA_UMBRAL = registerBlock( "fisura_umbral",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                   .strength(1f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

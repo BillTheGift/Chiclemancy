@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I#I",
+    "ICI",
+    "IMI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "chiclemancy:corazon_mecanico"
+    },
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "M": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "chiclemancy:maquina_chicle_base"
+  }
+}

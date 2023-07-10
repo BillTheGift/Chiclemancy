@@ -3,5 +3,17 @@
 
   "item.chiclemancy.chicle_rojo_neutro": "Balanced Red Gum",
 
-  "block.chiclemancy.maquina_chicle_base": "Dispenser Base"
+  "item.chiclemancy.esencia_transdimencional": "Cross-Dimensional Crux",
+
+  "item.chiclemancy.corazon_mecanico": "Mechanic Heart",
+
+  "item.chiclemancy.cuarto_de_dolar": "25 Cents",
+
+  "block.chiclemancy.maquina_chicle_base": "Gum Dispenser Base",
+
+  "block.chiclemancy.maquina_chicle_domo": "Gum Dispenser Dome",
+
+  "block.chiclemancy.fisura_umbral": "Umbral Fissure"
+
+
 }
