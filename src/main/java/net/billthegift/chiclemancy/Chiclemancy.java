@@ -3,6 +3,8 @@ package net.billthegift.chiclemancy;
 import com.mojang.logging.LogUtils;
 import net.billthegift.chiclemancy.block.ModBlocks;
 import net.billthegift.chiclemancy.item.ModItems;
+import net.billthegift.chiclemancy.world.feature.ModConfiguredFeatures;
+import net.billthegift.chiclemancy.world.feature.ModPlacedFeatures;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,6 +29,11 @@ public class Chiclemancy {
         ModItems.register(modEventBus);
 
         ModBlocks.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
+
+
 
         modEventBus.addListener(this::commonSetup);
 
